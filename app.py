@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('formulario.html')
+    return render_template('/formulario.html')
 
 # Cargar el modelo
 model = joblib.load('random_forest_model.pkl')
